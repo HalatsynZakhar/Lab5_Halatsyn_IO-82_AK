@@ -38,7 +38,7 @@ MODULE_DESCRIPTION("Hello, world in Linux Kernel Training");
 MODULE_LICENSE("Dual BSD/GPL");
 
 static uint times = 1;
-static param(count, uint, 0);
+static param(times, uint, 0);
 module_param(times,uint,S_IRUGO);
 MODULE_PARM_DESC(times, "The amount of times to print hello world");
 
